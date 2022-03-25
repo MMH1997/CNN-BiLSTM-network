@@ -23,9 +23,9 @@ The two modifications that you need to do in the [MainFile](https://github.com/M
 
 
 ## Summary of the predictor variables.
-* Auxiliary station (1) and Auxiliary station(2): traffic flow in two near stations to the target one. 
-* Target station: traffic flow in target station.
+* Auxiliary station (1) and Auxiliary station(2): Traffic flow in two near stations to the target one. 
+* Target station: Traffic flow in target station.
 * Tmax, tmin, tmed: Maximum, minimum and average temperature (of the day)
 * Rainfall: Daily rain.
-* Type of day: working day, public holiday or weekend.
+* Type of day: Working day, public holiday or weekend.
 * Hour.
