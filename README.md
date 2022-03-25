@@ -1,6 +1,7 @@
 # CNN-BiLSTM-network
 CNN-Bidirectional LSTM network to forecast long term traffic flow in Madrid. 
 
+## How apply the model?
 You can dowload the [MainFile](https://github.com/MMH1997/CNN-BiLSTM-network/blob/main/Main.ipynb) (in any form). This file develops the CNN-BiLSTM proposed model and makes the forecasting only in one station and one granularity: 12 hours, C/Arturo Soria.
 
 You can also dowload data from other stations or granularities. 
@@ -19,3 +20,12 @@ The two modifications that you need to do in the [MainFile](https://github.com/M
 `a3=list(range(0,24))`
 
 `a4=a1+a2+a3`
+
+
+## Summary of the predictor variables.
+* Auxiliary station (1) and Auxiliary station(2): traffic flow in two near stations to the target one. 
+* Target station: traffic flow in target station.
+* Tmax, tmin, tmed: Maximum, minimum and average temperature (of the day)
+* Rainfall: Daily rain.
+* Type of day: working day, public holiday or weekend.
+* Hour.
