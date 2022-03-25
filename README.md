@@ -7,11 +7,12 @@ You can dowload the [MainFile](https://github.com/MMH1997/CNN-BiLSTM-network/blo
 You can also dowload data from other stations or granularities. 
 
 The two modifications that you need to do in the [MainFile](https://github.com/MMH1997/CNN-BiLSTM-network/blob/main/Main.ipynb) to work with other datasets are:
-*First of all, change the name of the data file, exactly in 
+
+First of all, change the name of the data file, exactly in 
     
 `data=pd.read_csv('AS2(t-12).csv')`
     
-*Secondly, you need to change the way 'hour' variable is created. For it, you can check the file named [HourVariable](https://github.com/MMH1997/CNN-BiLSTM-network/blob/main/HourVariable.ipynb) and, depending on the granularity, you can employ the needed way to create the variable. You just must change the following lines in [MainFile](https://github.com/MMH1997/CNN-BiLSTM-network/blob/main/Main.ipynb):
+Secondly, you need to change the way 'hour' variable is created. For it, you can check the file named [HourVariable](https://github.com/MMH1997/CNN-BiLSTM-network/blob/main/HourVariable.ipynb) and, depending on the granularity, you can employ the needed way to create the variable. You just must change the following lines in [MainFile](https://github.com/MMH1997/CNN-BiLSTM-network/blob/main/Main.ipynb):
     
 `a1=list(range(13,24))`
 
