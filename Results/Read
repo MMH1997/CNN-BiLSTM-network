@@ -1,0 +1,2 @@
+In this folder, you can see the results obtained in the experiments performed. We compare the proposed model (CNN-BiLSTM) with five baseline models: LSTM, BiLSTM, CNN-LSTM,
+KNN, Random Forest and Linear Regression. In each station and for each model, we perform five experiments. 
