@@ -1,7 +1,13 @@
 # CNN-BiLSTM-network
+
 CNN-Bidirectional LSTM network to forecast long term traffic flow in Madrid. 
 
-## How apply the model?
+## Introduction
+In this repository we present the code implemented to forecast long-term traffic flow in four stations of Madrid by applying a hybrid model which combines a Convolutional block and a Bidirectional LSTM block. The first block is composed by a convolutional neural netowrk, a maxpooling layer and a flatten layer. The second one, is composed by a bidirectional LSTM network, a dropout layer and a dense layer. We also include in this repository all the datasets with the predictor variables and the target variable. The predictor variables are summarised in the final section of this file. 
+
+
+
+## How can you apply the model?
 You can dowload the [MainFile](https://github.com/MMH1997/CNN-BiLSTM-network/blob/main/Main.ipynb) (in any form). This file develops the CNN-BiLSTM proposed model and makes the forecasting only in one station and one granularity: 12 hours, C/Arturo Soria.
 
 You can also dowload data from other stations or granularities. 
