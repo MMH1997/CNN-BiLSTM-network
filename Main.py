@@ -140,7 +140,6 @@ plt.show()
 
 
 X = X.reshape((X.shape[0], X.shape[1], X.shape[2])).astype('float32')
-y = y.reshape((y.shape[0], y.shape[1], y.shape[2])).astype('float32')
 
 
 # We divide randomly our data in the train and test sets. 
