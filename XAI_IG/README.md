@@ -8,13 +8,11 @@ This module is implemented as a post-hoc analysis and does not modify or retrain
 
 ## Structure
 
-explainability_ig/
-│
-├── code/ # Integrated Gradients and analysis scripts
-├── results/ # Raw and aggregated attribution outputs
-├── figures/ # Generated plots
-├── paper/ # Draft / PDF of the associated paper
-└── README.md
+- `code/` – Integrated Gradients and analysis scripts  
+- `results/` – Raw and aggregated attribution outputs  
+- `figures/` – Generated plots  
+- `paper/` – Draft / PDF of the associated paper  
+- `README.md`
 
 ## Notes
 
