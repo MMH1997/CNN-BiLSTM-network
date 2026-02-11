@@ -1,0 +1,61 @@
+# Explainability Results
+
+This folder contains the attribution outputs produced by Integrated Gradients for the CNN–BiLSTM model.
+
+Results are organized by dataset and prediction horizon, following the same experimental setup as the original model.
+
+---
+
+## Input Variables
+
+Each input sample consists of 9 variables evaluated at 4 historical time steps (t, t−1, t−2, t−3), resulting in 36 features per sample.
+
+The variables are:
+
+1. Target street traffic flow  
+2. Auxiliary street 1 traffic flow  
+3. Auxiliary street 2 traffic flow  
+4. Mean temperature  
+5. Minimum temperature  
+6. Maximum temperature  
+7. Rainfall  
+8. Day type (working day / weekend / holiday)  
+9. Hour of day  
+
+All variables are normalized using min–max scaling.
+
+---
+
+## Output Format
+
+Results are stored as aggregated CSV files, one per dataset.
+
+Each CSV contains the average absolute Integrated Gradients attribution values organized as:
+
+- Rows: input variables  
+- Columns: historical time steps (`t`, `t-1`, `t-2`, `t-3`)  
+- Final column: mean attribution across all time steps  
+
+
+Each row corresponds to one input variable, and values represent the averaged absolute attribution over all analysed test samples.
+
+## Organization
+
+Results are grouped by dataset and horizon, with one CSV file per configuration, for example:
+
+- `XAI_AS12.csv`
+- `XAI_AS24.csv`
+- `XAI_CA72.csv`
+
+
+File names encode the street and prediction horizon.
+
+These CSV files are directly used to generate the plots included in the `figures/` folder.
+
+---
+
+## Notes
+
+- Values correspond to averaged absolute attributions.
+- Each CSV is normalized independently.
+- Comparisons between datasets should be interpreted in relative terms only.
